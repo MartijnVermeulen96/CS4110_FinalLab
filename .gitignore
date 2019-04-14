@@ -2,3 +2,5 @@
 out/
 *.pdf
 *.dot
+*.exe
+*.out
