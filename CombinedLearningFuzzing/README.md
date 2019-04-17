@@ -2,6 +2,12 @@
 Check out:
 https://github.com/praseodym/learning-fuzzing
 
+## Add AFL library
+To perform the right AFL calls, please follow the steps at:
+https://github.com/praseodym/learning-fuzzing
+For the afl and activelearner directory
+Then, add the libafl.so to your library (/usr/lib, /lib, or similar ...)
+
 ## Copy the problems
 Please add the RERS problem sources in this folder with directory prefix Problem*
 
