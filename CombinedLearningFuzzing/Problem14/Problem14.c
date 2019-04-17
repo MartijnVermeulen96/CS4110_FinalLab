@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
     void __VERIFIER_error(int i){
- std::cerr << "ERROR " << i << std::endl; assert(0);
+ printf("assert:%d\n", i); exit(3);
 }
 
 	// inputs

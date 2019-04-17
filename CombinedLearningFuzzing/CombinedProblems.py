@@ -18,7 +18,7 @@ def overwrite(src):
                          'if( cf==1 ){\nstd::cout << "Invalid input: " << input << std::endl;\n}\n} \n\n int main()', content,
                          flags=re.M)
     content_new = content_new.replace('extern void __VERIFIER_error(int);',
-                                      'void __VERIFIER_error(int i){\n std::cerr << "ERROR " << i << std::endl; assert(0);\n}')
+                                      'void __VERIFIER_error(int i){\n printf("assert:%d\\n", i); exit(3);\n}')
     content_new = re.sub('\/\/ read input[\s\S]*int input;[\s\S]*scanf\("%d", &input\);[\s\S]*\/\/ operate eca engine',
                          '// read input\nint input = 0;\n int ret = scanf("%d", &input);\n if (ret != 1) return 0;\n// operate eca engine',
                          content_new, flags=re.M)

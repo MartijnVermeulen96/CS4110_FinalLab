@@ -32,3 +32,6 @@ sed -i 's/\$dir\$/'$BASEDIR2'/g' config/application-target-rers_$problem.propert
 
 mkdir -p Problem$problem
 mkdir -p Problem$problem/findings
+mkdir -p Problem$problem/config
+
+mv config/application-target-rers_$problem.properties Problem$problem/config/application-target-rers_$problem.properties
