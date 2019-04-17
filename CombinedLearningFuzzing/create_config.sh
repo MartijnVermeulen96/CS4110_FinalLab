@@ -5,7 +5,6 @@ cp config/application-target-rers_template.properties config/application-target-
 sed -i 's/\$i\$/'$problem'/g' config/application-target-rers_$problem.properties
 
 BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-echo "$BASEDIR"
 
 if [ $problem == 1 ]||[ $problem == 2 ]||[ $problem == 3 ] || [ $problem == 11 ]||[ $problem == 12 ]||[ $problem == 13 ] 
 then

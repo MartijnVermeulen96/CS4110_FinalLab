@@ -20,4 +20,4 @@ fi
 
 
 
-afl-fuzz -i $inputdir -o Problem$problem/findings Problem$problem/a.exe
+afl-fuzz -i $inputdir -o Problem$problem/findings -s Problem$problem Problem$problem/a.exe
