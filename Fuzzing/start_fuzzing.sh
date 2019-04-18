@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo -n "Enter the problem number [ENTER]: "
-read problem
+problem=$1
+timeout=$2
 
 if [ $problem == 1 ]||[ $problem == 2 ]||[ $problem == 3 ] || [ $problem == 11 ]||[ $problem == 12 ]||[ $problem == 13 ] 
 then
@@ -20,4 +20,4 @@ fi
 
 
 mkdir -p Problem$problem/findings
-afl-fuzz -i $inputdir -o Problem$problem/findings -s Problem$problem Problem$problem/a.exe
+timeout $timeout afl-fuzz -i $inputdir -o Problem$problem/findings Problem$problem/a.exe

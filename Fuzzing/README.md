@@ -19,6 +19,6 @@ Compile all the problems in the folder using:
 ## Run the fuzzer
 Simply run the fuzzer by executing:
 	
-	bash start_fuzzing.sh
+	bash start_fuzzing.sh [Problem number] [Timeout]
 
 
