@@ -1,6 +1,13 @@
 # CS4110_FinalLab
 Code and examples for the CS4110 Final Lab
 
+## Prepare the problems
+Drop the RERS problems in this folder. Run:
+
+  python LearningProblems.py
+
+To prepare the code for basic learning.
+
 In order to compile the first problem run
 `g++ Problem1/Problem1.c -o Problem1/a.exe`
 
