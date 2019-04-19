@@ -3,9 +3,18 @@ printf "Enter timeout (1d, 1m, 3h, etc..): "
 read timeout
 "$@"
 
+printf "Which problems should I execute? (enter as 1 2 5 6 ..): "
+read -a  problems
 
-for i in 1 2 3 4 5 6 7 8 9 11 12 13 14 15 16 17 18 19
+printf "Should I also do the fuzzing? (false if already done): "
+read fuzzing
+
+
+for i in in ${problems[@]}
 do
-	gnome-terminal -e "bash execute.sh $i $timeout"
+	echo $i
+	gnome-terminal -e "bash execute.sh $i $timeout $fuzzing"
 done
 
+sleep $timeout
+echo "Done."
