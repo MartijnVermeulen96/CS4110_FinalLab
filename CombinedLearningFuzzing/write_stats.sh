@@ -4,7 +4,7 @@
 for folder in Problem*
 do
   echo -e "${folder}\n"
-  command_1="wc -l ${folder}/learning_error.txt | awk '{ print \$1 }'"
+  command_1="wc -l ${folder}/learning_errors.txt | awk '{ print \$1 }'"
   command_2="wc -l ${folder}/learning_paths.txt | awk '{ print \$1 }'"
   command_3="wc -l ${folder}/learning_states.txt | awk '{ print \$1 }'"
 
