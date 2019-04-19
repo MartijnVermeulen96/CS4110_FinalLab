@@ -8,6 +8,7 @@ Drop the RERS problems in this folder. Run:
 
 To prepare the code for basic learning.
 
+## Compiling the problems
 In order to compile the first problem run
 `g++ Problem1/Problem1.c -o Problem1/a.exe`
 
